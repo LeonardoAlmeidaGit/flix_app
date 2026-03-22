@@ -9,7 +9,7 @@ class ReviewService:
 
     def get_reviews(self):
         if 'reviews' in st.session_state:
-            st.session_state.reviews
+            return st.session_state.reviews
         reviews = self.review_repository.get_reviews()
         st.session_state.reviews = reviews
         return reviews
