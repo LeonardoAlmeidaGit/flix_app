@@ -21,7 +21,7 @@ def show_actors():
         st.warning('Nenhum Ator/Atriz encontrado!!')
 
     st.title('Cadastrar novo(a) Ator/Atriz')
-    name = st.text_input('Nome do(a) Ator/Atrz')
+    name = st.text_input('Nome do(a) Ator/Atriz')
     birthday = st.date_input(
         label='Data de nascimento do(a) Ator/Atriz',
         value=datetime.today(),
