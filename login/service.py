@@ -16,6 +16,6 @@ def login(username, password):
 
 
 def logout():
-    for key in st.session_state.key():
+    for key in st.session_state.keys():
         del st.session_state[key]
     st.rerun()
